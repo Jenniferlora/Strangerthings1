@@ -1,0 +1,177 @@
+*{
+	padding: 0;
+	margin:0;
+}
+body{
+	display: flex;
+	background-color: rgba(0,0,0,1);
+	margin: 0 auto;
+	flex-wrap: wrap;
+
+}
+
+}
+.navigation{
+	flex:1;
+	width:1vw;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: rgba(10,0,0,.5);
+	position: relative;
+	z-index: 10;
+}
+
+
+h4,a {
+	flex:1;
+	font-size: 24px;
+	margin-top: 20px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color:white;
+	text-decoration: none;
+	font-family: 'Diplomata SC', cursive;
+	letter-spacing: 2px;
+
+}
+
+
+
+a:hover{
+	color:red;
+	background-color: rgba(0,0,0,.5);
+}
+.container{
+	flex:8;
+	justify-content: center;
+	position: relative;
+	margin: 0 auto;
+	}
+
+.tablecontainer{
+	align-items: center;
+}
+.cells{
+	border:5px solid red;
+	height: 200px;
+	color:white;
+	text-align:center;
+}
+table{
+	border: 2px solid black;
+	padding: 20px;
+	margin:20px;
+	width:80vw;
+}
+
+td,tr{
+	border: 2px solid black;
+	font-size: 30px;
+
+}
+#slideshowmain{
+	
+	margin: 0 auto;
+	width: 70vw;
+	height: 60vh;
+}
+
+
+
+
+.slideshowimages{
+
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 70vw;
+	height: 80vh;
+	display: center;
+	border:red solid 2px;
+}
+.myslides{
+	margin: 0 auto;
+	width:70vw;
+	height: 80vh
+}
+button{
+	height: 50px;
+	width:50px;
+	background-color: black;
+
+}
+
+#video{
+	margin: 0 auto;
+	width: 80vw;
+	height: 100vh;
+}
+
+iframe{
+	margin: 0 auto;
+	width: 80vw;
+	height:100vh;
+	border-color: red;
+	border-width: 5px;
+	padding: 10px;
+	border-radius: 10%;
+	margin-top: 10px;
+
+}
+.description{
+	margin-top: 100px;
+	background-color: (0,0,0,.5);
+	color:white;
+	width: 80vw;
+	margin-left: 20vw;
+	font-family: 'Roboto', sans-serif;
+
+}
+.pics{
+	width: 10vw;
+	border: solid red;
+	background-size: cover;
+}
+#winona{
+	background-image: url("images/winona.jpg");
+	background-size: cover;
+}
+
+#david{
+	background-image: url("images/david.jpg");
+	background-size: cover;
+}
+
+#finn{
+	background-image: url("images/finn.jpg");
+	background-size: cover;
+}
+
+#millie{
+	background-image: url("images/millie.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+#gaten{
+	background-image: url("images/gaten.jpg");
+	background-size: cover;
+}
+
+#caleb{
+	background-image: url("images/caleb.jpg");
+	background-size: cover;
+}
+
+#natalia{
+	background-image: url("images/natalia.jpg");
+	background-size: cover;
+}
+
+#charlie{
+	background-image: url("images/charlie.jpg");
+	background-size: cover;
+}
+
+}

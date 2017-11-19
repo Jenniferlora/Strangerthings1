@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stranger Things</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+</head>
+<body>
+<div class="container2">
+
+<div id="navigation">
+	<h4 class="links"><a href="index.html">Home</a></h4> 
+	<h4 class="links"><a href="about.html">About</a></h4> 
+	<h4 class="links"><a href="cast.html">Cast</a></h4>
+	<h4 class="links"><a href="Awards.html">Awards</a></h4>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>

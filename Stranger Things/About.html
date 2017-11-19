@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stranger Things</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<style type="text/css">
+	p{
+		color:white;
+		display: inline-flex;
+		line-height: 80px;
+		font-size: 20px;
+	}
+	h3{
+
+		color:white;
+		display: inline-flex;
+		line-height: 60px
+	}
+	h2{
+
+		color:white;
+		display: inline-flex;
+		line-height: 60px
+	}
+
+
+
+</style>
+</head>
+<body>
+<div class="navigation" id="firstnav">
+	<h4 class="links"><a href="index.html">Home</a></h4> 
+	<h4 class="links"><a href="synopsis.html">Trailer</a></h4>
+	<h4 class="links"><a href="about.html">About</a></h4> 
+	<h4 class="links"><a href="cast.html">Cast</a></h4>
+</div>
+<div id="slideshowmain">
+
+<div class="slideshowimages">
+<img class= "myslides" src="images/pic1.jpg">
+<img class= "myslides" src="images/pic2.jpg">
+<img class= "myslides" src="images/pic3.jpg">
+<img class= "myslides" src="images/pic4.jpg">
+<img class= "myslides" src="images/pic5.jpg">
+</div>
+
+<div class="buttons">
+<button><a class="back-button" onclick="plusDivs(-1)">&#10094;</a></button>
+<p>     Season 2   </p>
+<button><a class="forward-button" onclick="plusDivs(+1)">&#10095;</a></button>
+</div>
+
+</div>
+<div class="description">
+<br/>
+<h3>Synopsis</h3></br>
+<h2>Creator: The Duffer Brothers</h2><br/>
+<p>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.<p>
+</div>
+
+
+
+<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+		showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+		var i;
+		var x= document.getElementsByClassName("myslides");
+		if (n > x.length) {slideIndex = 1}
+			if (n < 1){slideIndex=x.length}
+				for(i=0; i<x.length; i++){
+					x[i].style.display="none";
+				}
+
+				x[slideIndex-1].style.display = "block";
+	}
+</script>
+
+
+
+
+
+</body>
+</html>
