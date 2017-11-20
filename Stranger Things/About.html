@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Diplomata+SC" rel="stylesheet">
 <style type="text/css">
 	p{
 		color:white;
@@ -47,9 +48,9 @@
 </div>
 
 <div class="buttons">
-<button><a class="back-button" onclick="plusDivs(-1)">&#10094;</a></button>
+<button><a class="back-button" onclick="showslides(-1)">&#10094;</a></button>
 <p>     Season 2   </p>
-<button><a class="forward-button" onclick="plusDivs(+1)">&#10095;</a></button>
+<button><a class="forward-button" onclick="showslides(+1)">&#10095;</a></button>
 </div>
 
 </div>
@@ -63,24 +64,27 @@
 
 
 <script>
-	var slideIndex = 1;
-	showDivs(slideIndex);
+	var slideindex = 0;
+	showslides();
 
-	function plusDivs(n) {
-		showDivs(slideIndex += n);
-	}
-
-	function showDivs(n) {
-		var i;
+	function showslides() {
+		var i=0;
 		var x= document.getElementsByClassName("myslides");
-		if (n > x.length) {slideIndex = 1}
-			if (n < 1){slideIndex=x.length}
-				for(i=0; i<x.length; i++){
-					x[i].style.display="none";
-				}
+	
 
-				x[slideIndex-1].style.display = "block";
-	}
+		while(i<x.length){
+			
+			x[i].style.display="none";
+
+			i+=1;
+			
+			}
+
+			slideindex++;
+			
+			if (slideindex > x.length) {slideindex =1} x[slideindex-1].style.display = "block";
+			}
+
 </script>
 
 
